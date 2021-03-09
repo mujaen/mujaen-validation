@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "allowJs": true,
+        "sourceMap": true,
+        "strict": true,
+        "esModuleInterop": true,
+        "outDir": "target",
+        "lib": ["ES6", "DOM"]
+    },
+    "exclude": ["node_modules"]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "mujaen-validation",
+  "version": "1.0.0",
+  "description": "Form Validation",
+  "main": "src/js/main.ts",
+  "scripts": {
+    "server": "gulp --mode=development --run=server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mujaen/mujaen-validation.git"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {}
+}
