@@ -4,21 +4,20 @@
   "description": "Form Validation",
   "main": "src/js/main.ts",
   "scripts": {
-    "server": "gulp --mode=development --run=server"
+    "server": "rollup -c -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mujaen/mujaen-validation.git"
   },
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-cli": "^2.3.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-connect": "^5.7.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-typescript": "^6.0.0-alpha.1",
+    "@rollup/plugin-typescript": "^8.2.1",
     "prettier": "^2.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.46.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "tslib": "^2.2.0",
     "typescript": "^4.2.2"
-  },
-  "dependencies": {}
+  }
 }
