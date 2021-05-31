@@ -19,7 +19,7 @@ interface Options {
 }
 
 class Validation {
-    public form: HTMLElement | null;
+    public form: HTMLFormElement | null;
     public list: Item[];
     public check: boolean;
     public valid: boolean;
@@ -84,6 +84,10 @@ class Validation {
         });
 
         return this.check == true ? true : false;
+    }
+
+    public submit(): void {
+        this.form?.submit();
     }
 
     public add(items: List): void {

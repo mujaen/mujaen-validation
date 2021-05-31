@@ -1,5 +1,6 @@
-'use strict';
-
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Validation = void 0;
 var Validation = /** @class */ (function () {
     function Validation(form) {
         this.form = document.querySelector(form);
@@ -40,6 +41,7 @@ var Validation = /** @class */ (function () {
         switch (result) {
             case true:
                 return true;
+                break;
             default:
                 if (message)
                     alert(message);
@@ -73,38 +75,5 @@ var Validation = /** @class */ (function () {
     };
     return Validation;
 }());
-
-var app = function () {
-    var button = document.getElementById('button');
-    document.querySelector('[name=zero]');
-    var form = new Validation('.form');
-    button === null || button === void 0 ? void 0 : button.addEventListener('click', function (event) {
-        event.preventDefault();
-        if (form.validate()) {
-            form.submit();
-        }
-    });
-    (function () {
-        form.add({
-            validate: [
-                {
-                    field: '[name=id]',
-                    options: {
-                        checked: true
-                    },
-                    message: '아이디를 입력해 주세요',
-                    focus: true
-                },
-                {
-                    field: '[name=address]',
-                    message: '주소를 입력해 주세요',
-                    options: {
-                        required: true
-                    },
-                    focus: true
-                }
-            ]
-        });
-    })();
-};
-document.addEventListener('DOMContentLoaded', function () { return app(); }, false);
+exports.Validation = Validation;
+//# sourceMappingURL=main.js.map

@@ -1,19 +1,17 @@
-import {Validation} from "./main";
-
-const app = () => {
-    const button = document.getElementById('button');
-    const zero = <HTMLInputElement>document.querySelector('[name=zero]');
-    const form = new Validation('.form');
-
-    button?.addEventListener('click', (event) => {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var main_1 = require("./main");
+var app = function () {
+    var button = document.getElementById('button');
+    var zero = document.querySelector('[name=zero]');
+    var form = new main_1.Validation('.form');
+    button === null || button === void 0 ? void 0 : button.addEventListener('click', function (event) {
         event.preventDefault();
-
-        if(form.validate()) {
+        if (form.validate()) {
             form.submit();
         }
     });
-
-    (() => {
+    (function () {
         form.add({
             validate: [
                 {
@@ -36,5 +34,5 @@ const app = () => {
         });
     })();
 };
-
-document.addEventListener('DOMContentLoaded', () => app(), false);
+document.addEventListener('DOMContentLoaded', function () { return app(); }, false);
+//# sourceMappingURL=app.js.map

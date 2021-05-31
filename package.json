@@ -2,8 +2,14 @@
   "name": "mujaen-validation",
   "version": "1.0.0",
   "description": "Form Validation",
-  "main": "src/js/main.ts",
+  "author": {
+    "name": "Jinjer Kim",
+    "url": "https://github.com/mujaen"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "server": "rollup -c -w"
   },
   "repository": {
@@ -12,12 +18,14 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
-    "prettier": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rollup": "^2.46.0",
     "rollup-plugin-serve": "^1.1.0",
     "tslib": "^2.2.0",
     "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "mujaen-validation": "^1.0.0"
   }
 }
