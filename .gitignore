@@ -1,8 +1,7 @@
 node_modules/
 .idea/
 .cache/
-dest/
-
+target/
 
 npm-debug.log*
 package-lock.json

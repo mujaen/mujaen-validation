@@ -18,7 +18,7 @@ interface Options {
     max: number
 }
 
-class Validation {
+export default class Validation {
     public form: HTMLFormElement | null;
     public list: Item[];
     public check: boolean;
@@ -95,6 +95,4 @@ class Validation {
             if(Object.keys(item).length) this.list.push(item);
         });
     }
-}
-
-export {Validation};
+};

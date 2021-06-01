@@ -42,12 +42,25 @@ npm install mujaen-validation
     }
 }
 ```
+| 속성 | 설명 | 기본값 | 타입 |
+|---|---|---|---|
+| cumstom | 임의 스크립트를 추가하여 결과에 따른 이벤트 발생 | false | boolean |
 
 ### add
 - 유효성 검사 규칙을 추가합니다.
 ```javascript
 form.add({validate: []});
 ```
+
+### options
+
+| 속성 | 설명 | 기본값 | 타입 |
+|---|---|---|---|
+| required | 입력값 유무 | false | boolean |
+| checked | 체크 유무 | false | boolean |
+| email | 이메일 유효성 | false | boolean |
+| min | 입력 최솟값 | | number |
+| max | 입력 최댓값 | | number |
 
 
 ### Usage
